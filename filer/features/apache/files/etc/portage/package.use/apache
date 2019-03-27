@@ -1,0 +1,4 @@
+www-servers/apache threads
+www-servers/apache apache2_modules_macro
+www-servers/apache -apache2_modules_deflate
+www-servers/apache apache2_mpms_event

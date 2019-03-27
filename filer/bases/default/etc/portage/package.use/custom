@@ -1,0 +1,3 @@
+sys-kernel/gentoo-sources symlink
+app-editors/vim -gpm
+sys-apps/util-linux static-libs

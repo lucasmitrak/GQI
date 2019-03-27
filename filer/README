@@ -1,0 +1,2 @@
+Enable the desired features in config.sh and run filer.sh. Go into the "files" directory and set all the program and operation system settings to how you want it to be. You may want to change:, conf.d/hostname, conf.d/net, default/grub, and fstab. In addition, make sure to set "files_dir" to "." in the installer's config.sh.
+Go into the "configs" directory and configure each feature how you want it to be. For example, you may want to change the user's name.

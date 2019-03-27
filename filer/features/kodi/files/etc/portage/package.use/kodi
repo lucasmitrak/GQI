@@ -1,0 +1,4 @@
+media-tv/kodi bluray sftp upnp webserver
+media-video/ffmpeg openssl
+net-libs/libmicrohttpd messages
+dev-lang/python sqlite

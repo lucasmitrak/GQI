@@ -1,0 +1,19 @@
+This is a gentoo quick installer
+This is meant for people experienced with the gentoo installation
+
+There are three large parts to this GQI: the installer, the filer, and the kfragmenter. The installer is the actual bash scripts that will be run, but it needs the neccessary files for the operation system and optionally a kernel config/fragment. These can be optained from the filer and kfragmenter respectively.
+To get what you need from each of these three, you will need to configure the config.sh file, run the associately named script which puts it together(for the filer and kfragmenter), and run the copy.sh script for all three. The config.sh file helps determine the features and circumstances of the machine you are installing on. The associately named script(filer.sh and kfragmenter.sh) put together what you will need for the installer. The copy.sh script copies what you need to a ready-to-go directory called "finished". Copy this directory onto the machine you want to install on and run begin.sh.
+Always remember to check and re-check that what is going to be copied to the "finished" directory is correct before running it! If you mess up, you can always correct it and recopy. For the filer, always check the "files" directory and set the files configuration correctly, this incudes hostname, networking information, fstab, and conf/net for networking information. For the installer, check and recheck the config.sh file is correct, this is the core configuration of the entire GQI. For the kfragmenter, check the features you want in the kernel are correct. You can always use your own kernel instead of a kernel fragment and set it in the installer's config.sh file. Once everything is rechecked and ready, copy the "finished" directory onto the computer with the gentoo install CD and run "begin.sh"!
+
+With different hardware, you need to change:
+For drive name change:
+-config.sh
+-fstab
+-grub
+
+For network name change:
+-config.sh
+-conf/net
+
+For cpu count change:
+-make.conf
