@@ -46,8 +46,8 @@ kernel_fragment_dir="."
 ##os setup
 #webrsync over regular --sync
 webrsync=true
-#12 default, 16 xorg, 19 plasma
-eselect_profile="12"
+#16 default, 20 xorg, 23 plasma
+eselect_profile="16"
 eselect_locale="5"
 
 ##kernel
