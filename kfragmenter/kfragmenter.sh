@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 source config.sh
-$qemu && cat configfragments/config_qemu-fragment>>config-fragment
 $lvm && cat configfragments/config_lvm-fragment>>config-fragment
 $crypt && cat configfragments/config_crypt-fragment>>config-fragment
 $pulseaudio && cat configfragments/config_pulseaudio-fragment>>config-fragment

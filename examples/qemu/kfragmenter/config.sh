@@ -2,7 +2,6 @@
 set -ex
 
 #select which defining fragments you want in your kernel fragment
-qemu=true
 lvm=false
 crypt=false
 pulseaudio=false

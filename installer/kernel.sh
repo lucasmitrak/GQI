@@ -8,8 +8,13 @@ emerge -u pciutils genkernel gentoo-sources
 if [ -f /config ]; then
 	#copy to location
 	cp /config /usr/src/linux/.config
-elif [ -f /config-fragment ]; then
+elif [ -f /config-fragment ] || $guest_qemu; then
 	cd /usr/src/linux && make defconfig
+	cd /
+fi
+#enable qemu guest support
+if $guest_qemu; then
+	cd /usr/src/linux && make kvmconfig
 	cd /
 fi
 #if optional fragment kernel config file exists
