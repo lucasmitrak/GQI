@@ -75,9 +75,6 @@ fi
 if $dmcrypt; then
 	add_feature "dmcrypt"
 fi
-if $firefox; then
-	add_feature "firefox"
-fi
 if $apache; then
 	add_feature "apache"
 fi
@@ -113,6 +110,9 @@ if $kodi; then
 fi
 if $plasma; then
 	add_feature "plasma"
+fi
+if $firefox; then
+	add_feature "firefox"
 fi
 if $lvm; then
 	add_feature "lvm"
