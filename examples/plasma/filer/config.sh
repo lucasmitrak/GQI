@@ -17,7 +17,6 @@ rsyncd=false
 #local portage overlay
 local_overlay=false
 dmcrypt=false
-firefox=false
 apache=false
 
 #more advanced features
@@ -39,3 +38,4 @@ xorg=true
 #kodi creates a kodi media center. disabled by plasma
 kodi=false
 plasma=true
+firefox=false
