@@ -116,6 +116,9 @@ fi
 if $firefox; then
 	add_feature "firefox"
 fi
+if $autologin; then
+	add_feature "autologin"
+fi
 if $lvm; then
 	add_feature "lvm"
 fi
