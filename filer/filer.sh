@@ -8,6 +8,8 @@ if $host_gentoo; then rsyncd=true; fi
 if $host_files || $host_git; then apache=true; fi
 #if kodi or plasma, xorg true
 if $kodi || $plasma; then xorg=true; fi
+#if kodi or plasma, xorg true
+if ! $kodi && ! $plasma; then autologin=false; fi
 #can only have one
 if $plasma; then kodi=false; fi
 

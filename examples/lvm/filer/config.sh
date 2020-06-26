@@ -38,4 +38,5 @@ xorg=false
 #kodi creates a kodi media center. disabled by plasma
 kodi=false
 plasma=false
+autologin=false
 firefox=false

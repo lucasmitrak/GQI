@@ -10,9 +10,11 @@ rc-update add dbus default
 emerge -u polkit
 emerge -u udisks
 
+emerge -u sddm
+rc-update add xdm default
+
 emerge -u plasma-meta
 
 if [ $user ]; then
 	usermod -a -G audio,cdrom,video,cdrw,usb,users $user
-	echo "exec dbus-launch --exit-with-session startplasma-x11">/home/$user/.xinitrc
 fi
