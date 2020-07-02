@@ -10,7 +10,7 @@ rc-update add dbus default
 emerge -u polkit
 emerge -u udisks
 
-emerge -u sddm
+emerge -u lightdm
 rc-update add xdm default
 
 emerge -u plasma-meta

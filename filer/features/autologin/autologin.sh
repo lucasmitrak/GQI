@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 source config.sh
-if $kodi; then sed -i -e 's/Session=/Session=kodi.desktop/g' /usr/share/sddm/sddm.conf.d/00default.conf; fi
-if $plasma; then sed -i -e 's/Session=/Session=plasma.desktop/g' /usr/share/sddm/sddm.conf.d/00default.conf; fi
-if [ $user ]; then sed -i -e "s/User=/User=$user/g" /usr/share/sddm/sddm.conf.d/00default.conf; fi
+if $kodi; then sed -i -e 's/#autologin-session=/autologin-session=kodi/g' /etc/lightdm/lightdm.conf; fi
+if $plasma; then sed -i -e 's/#autologin-session=/autologin-session=plasma/g' /etc/lightdm/lightdm.conf; fi
+if [ $user ]; then sed -i -e "s/#autologin-user=/autologin-user=$user/g" /etc/lightdm/lightdm.conf; fi
