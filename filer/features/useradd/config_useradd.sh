@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 user="user"
-user_pw="resu"
+user_pw="password"
