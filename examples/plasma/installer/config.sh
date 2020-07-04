@@ -64,4 +64,4 @@ interface="eth0"
 root_pw="toor"
 sysklogd=true
 fcron=true
-packages="vim gentoolkit"
+packages="vim gentoolkit konsole"
