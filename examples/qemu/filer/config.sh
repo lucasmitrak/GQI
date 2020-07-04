@@ -9,7 +9,7 @@ crypt=false
 #enable desired features
 #enable or disable bios_boot if or not using it!
 bios_boot=true
-useradd=false
+useradd=true
 sudo=false
 wpa_supplicant=false
 sshd=false
