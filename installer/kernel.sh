@@ -5,10 +5,10 @@ source config.sh
 emerge -u pciutils genkernel gentoo-sources
 
 #if optional kernel config file exists
-if [ -f /config ]; then
+if [ -f /$kernel_name ]; then
 	#copy to location
-	cp /config /usr/src/linux/.config
-elif [ -f /config-fragment ] || $guest_qemu; then
+	cp /$kernel_name /usr/src/linux/.config
+elif [ -f /$kernel_fragment_name ] || $guest_qemu; then
 	cd /usr/src/linux && make defconfig
 	cd /
 fi
@@ -18,7 +18,7 @@ if $guest_qemu; then
 	cd /
 fi
 #if optional fragment kernel config file exists
-if [ -f /config-fragment ]; then
+if [ -f /$kernel_fragment_name ]; then
 	#add it to the kernel
 	/usr/src/linux/scripts/kconfig/merge_config.sh -m -O /usr/src/linux /usr/src/linux/.config /config-fragment
 fi

@@ -41,7 +41,7 @@ kernel_dir=""
 
 kernel_fragment_name="config-fragment"
 kernel_fragment_http=""
-kernel_fragment_dir="."
+kernel_fragment_dir=""
 
 #guest in qemu?
 guest_qemu=false
