@@ -49,8 +49,8 @@ guest_qemu=false
 ##os setup
 #webrsync over regular --sync
 webrsync=true
-#16 default, 20 xorg, 23 plasma
-eselect_profile="16"
+#1 default, 5 xorg, 8 plasma
+eselect_profile="1"
 eselect_locale="5"
 
 ##kernel
