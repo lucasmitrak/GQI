@@ -2,6 +2,7 @@
 set -ex
 
 #select which defining fragments you want in your kernel fragment
+virtualboxguest=false
 lvm=false
 crypt=false
 pulseaudio=false
