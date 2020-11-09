@@ -21,6 +21,7 @@ cp -r bases/default/* files
 $xorg && cp -r bases/xorg/* files
 $xorg && $qemu && cp -r bases/xorg_qemu/* files
 $qemu && cp -r bases/qemu/* files
+$virtualboxguest && cp -r bases/virtualboxguest/* files
 $lvm && cp -r bases/lvm/* files
 $crypt && cp -r bases/crypt/* files
 $crypt && $qemu && cp -r bases/crypt_qemu/* files
@@ -124,4 +125,7 @@ if $lvm; then
 fi
 if $crypt; then
 	add_feature "crypt"
+fi
+if $virtualboxguest; then
+	add_feature "virtualboxguest"
 fi

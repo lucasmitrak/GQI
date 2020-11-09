@@ -3,6 +3,7 @@ set -ex
 
 #choose which defining features you want included
 qemu=false
+virtualboxguest=false
 lvm=false
 crypt=false
 
