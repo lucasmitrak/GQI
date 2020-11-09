@@ -50,7 +50,7 @@ guest_qemu=false
 #webrsync over regular --sync
 webrsync=true
 #1 default, 5 xorg, 8 plasma
-eselect_profile="1"
+eselect_profile="8"
 eselect_locale="5"
 
 ##kernel

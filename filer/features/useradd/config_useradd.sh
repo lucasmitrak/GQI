@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 user="user"
-user_pw="password"
+user_pw="gentooquickinstall"

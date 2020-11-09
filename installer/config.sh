@@ -61,7 +61,7 @@ genkernel_option="all"
 
 ##setup
 interface="eth0"
-root_pw="toor"
+root_pw="gentooquickinstall"
 sysklogd=true
 fcron=true
 packages="vim gentoolkit"
