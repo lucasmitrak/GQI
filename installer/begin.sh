@@ -2,4 +2,6 @@
 
 setterm -blank 0
 
-time ./stage3.sh
+if $stage3_script; then
+	time ./stage3.sh
+fi

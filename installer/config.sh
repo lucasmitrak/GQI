@@ -11,11 +11,14 @@ uefi=false
 hdd="/dev/sda"
 #needed for uefi boot
 uefi_fs=""
-#always needed
-#set to the final filesystem location
+#always needed except for chrooting
+#set to the final logical filesystem location
 fs="/dev/sda1"
+#should the above filesystem be mounted onto the below mount location? usually yes
+mount=true
 
 ##stage3 files
+#mount location
 ml="/mnt/gentoo"
 nongentoo_shm=false
 #set date using ntpd
@@ -65,3 +68,17 @@ root_pw="gentooquickinstall"
 sysklogd=true
 fcron=true
 packages="vim gentoolkit"
+
+##continue onto this script
+#true will continue to this script
+#almost always set to yes except for chrooting or testing
+#warning: the scripts have an order of
+#begin->stage3->chroot->os_setup->kernel->setup->exit
+#so if you set stage3=false, then neither chroot nor anything after
+#will be called
+stage3_script=true
+chroot_script=true
+os_setup_script=true
+kernel_script=true
+setup_script=true
+exit_script=true

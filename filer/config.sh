@@ -17,6 +17,8 @@ sshd=false
 rsyncd=false
 #local portage overlay
 local_overlay=false
+#only enable dmcrypt if you have another encrypted drive
+#make sure to configure!
 dmcrypt=false
 apache=false
 

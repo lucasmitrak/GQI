@@ -26,4 +26,6 @@ env-update
 #update bash settings
 source /etc/profile
 [ -x post_os_setup.sh ] && ./post_os_setup.sh
-./kernel.sh
+if $kernel_script; then
+	./kernel.sh
+fi

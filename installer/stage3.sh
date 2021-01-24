@@ -3,7 +3,9 @@ source config.sh
 [ -x pre_stage3.sh ] && ./pre_stage3.sh
 mkdir -p $ml
 #mount filesystem
-mount $fs $ml
+if $mount; then
+	mount $fs $ml
+fi
 if $uefi; then
 	mkdir -p $ml/boot
 	mount -t vfat $uefi_fs $ml/boot
@@ -72,4 +74,6 @@ if [ $kernel_fragment_dir ]; then
         cp $kernel_fragment_dir/$kernel_fragment_name $ml
 fi
 [ -x post_stage3.sh ] && ./post_stage3.sh
-./chroot.sh
+if $chroot_script; then
+	./chroot.sh
+fi
