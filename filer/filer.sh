@@ -36,13 +36,10 @@ function add_feature {
 	if [ -a $filesd ]; then
 		cp -r $filesd files/
 	fi
-	#copy, add config_extra.sh
+	#copy related installer config
 	configd="features/$1"
 	confign="config_$1.sh"
 	if [ -f $configd/$confign ]; then
-		[ ! -d fscripts ] && mkdir fscripts
-		[ ! -f fscripts/config_extra.sh ] && echo "#!/usr/bin/env bash">>fscripts/config_extra.sh
-		echo "source $confign">>fscripts/config_extra.sh
 		[ ! -d configs ] && mkdir configs
 		cp "$configd/$confign" configs
 	fi

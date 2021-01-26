@@ -43,3 +43,5 @@ kodi=false
 plasma=false
 autologin=false
 firefox=false
+
+for f in config_*.sh; do [ -f "$f" ] && source "$f"; done
