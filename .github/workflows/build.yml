@@ -11,4 +11,4 @@ jobs:
   - uses: actions/checkout@v2
   - name: Run chroot
     run: |
-     cd autoinstall && ./chroot.sh
+     cd autoinstall && sudo ./chroot.sh
