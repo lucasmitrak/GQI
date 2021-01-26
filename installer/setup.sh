@@ -24,7 +24,7 @@ emerge -u grub
 #install grub
 if $uefi; then
 	grub-install --target=x86_64-efi --efi-directory=/boot
-elif $biosboot; then
+elif $bios_boot; then
 	grub-install $hdd
 fi
 mkdir -p /boot/grub

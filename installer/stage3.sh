@@ -54,7 +54,7 @@ if [ $files_dir ]; then
 fi
 if $files_is_tar; then
 	tar xpf $ml/$files_name -C $ml
-else
+elif [ $files_name ]; then
 	cp -r $ml/$files_name/* $ml
 fi
 #if download kernel config
