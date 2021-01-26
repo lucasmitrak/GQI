@@ -15,3 +15,4 @@ chmodx_copy "kernel.sh"
 chmodx_copy "os_setup.sh"
 chmodx_copy "setup.sh"
 chmodx_copy "stage3.sh"
+for f in config_*.sh; do [ -f "$f" ] && chmodx_copy "$f"; done
