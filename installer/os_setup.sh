@@ -16,7 +16,7 @@ eselect profile set $eselect_profile
 #update world
 emerge -vuND world
 #config timezone-data
-##emerge --config timezone-data
+emerge --config timezone-data
 #generate locale
 ##locale-gen
 #set locale with eselect
@@ -24,7 +24,7 @@ emerge -vuND world
 #update enviroment
 ##env-update
 #update bash settings
-##source /etc/profile
+source /etc/profile
 [ -x post_os_setup.sh ] && ./post_os_setup.sh
 if $kernel_script; then
 	./kernel.sh
