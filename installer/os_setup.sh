@@ -18,7 +18,7 @@ emerge -vuND world
 #config timezone-data
 emerge --config timezone-data
 #generate locale
-##locale-gen
+locale-gen
 #set locale with eselect
 ##eselect locale set $eselect_locale
 #update enviroment
