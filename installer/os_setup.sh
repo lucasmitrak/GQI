@@ -20,7 +20,7 @@ emerge --config timezone-data
 #generate locale
 locale-gen
 #set locale with eselect
-eselect locale set $eselect_locale
+##eselect locale set $eselect_locale
 #update enviroment
 env-update
 #update bash settings
