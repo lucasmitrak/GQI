@@ -83,4 +83,4 @@ kernel_script=true
 setup_script=true
 exit_script=true
 
-for f in config_*.sh; do [ -f "$f" ] && source "$f"; done
+for f in config_*.sh; do [ -x "$f" ] && source "$f"; done
