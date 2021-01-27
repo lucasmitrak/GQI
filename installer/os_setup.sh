@@ -22,7 +22,7 @@ emerge --config timezone-data
 #set locale with eselect
 ##eselect locale set $eselect_locale
 #update enviroment
-##env-update
+env-update
 #update bash settings
 source /etc/profile
 [ -x post_os_setup.sh ] && ./post_os_setup.sh
