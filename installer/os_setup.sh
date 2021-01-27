@@ -14,7 +14,7 @@ eselect news read all
 #set profile
 eselect profile set $eselect_profile
 #update world
-##emerge -vuND world
+emerge -vuND world
 #config timezone-data
 ##emerge --config timezone-data
 #generate locale
