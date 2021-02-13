@@ -20,8 +20,8 @@ cp -r bases/default/* files
 #copy specific files over
 $xorg && cp -r bases/xorg/* files
 $xorg && $qemu && cp -r bases/xorg_qemu/* files
+$xorg && $virtualboxguest && cp -r bases/xorg_virtualboxguest/* files
 $qemu && cp -r bases/qemu/* files
-$virtualboxguest && cp -r bases/virtualboxguest/* files
 $lvm && cp -r bases/lvm/* files
 $crypt && cp -r bases/crypt/* files
 $crypt && $qemu && cp -r bases/crypt_qemu/* files
