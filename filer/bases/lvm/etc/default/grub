@@ -1,9 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 #
 # To populate all changes in this file you need to regenerate your
 # grub configuration file afterwards:
-#     'grub2-mkconfig -o /boot/grub/grub.cfg'
+#     'grub-mkconfig -o /boot/grub/grub.cfg'
 #
 # See the grub info page for documentation on possible variables and
 # their associated values.
@@ -11,18 +11,14 @@
 GRUB_DISTRIBUTOR="Gentoo"
 
 # Default menu entry
-GRUB_DEFAULT=0
+#GRUB_DEFAULT=0
 
 # Boot the default entry this many seconds after the menu is displayed
-GRUB_TIMEOUT=2
+#GRUB_TIMEOUT=5
 #GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
 GRUB_CMDLINE_LINUX="dolvm root=/dev/mapper/vg-lv rootfstype=ext4"
-#only if you want the QEMU kernel requirements to be modules auto loaded
-#otherwise, just use the kfragmenter to automatically include the
-#QEMU kernel requirements into the kernel itself
-#GRUB_CMDLINE_LINUX="doload=virtio_pci,virtio_blk dolvm root=/dev/mapper/vg-lv rootfstype=ext4"
 #
 # Examples:
 #
