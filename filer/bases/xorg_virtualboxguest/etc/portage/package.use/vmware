@@ -1,2 +1,3 @@
-#x11-libs/libdrm libkms
-#media-libs/mesa xa
+x11-libs/libdrm libkms
+media-libs/mesa xa
+dev-db/sqlite -icu
