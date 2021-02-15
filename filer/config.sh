@@ -15,25 +15,9 @@ sudo=false
 wpa_supplicant=false
 sshd=false
 rsyncd=false
-#local portage overlay
-local_overlay=false
-#only enable dmcrypt if you have another encrypted drive
-#make sure to configure!
-dmcrypt=false
 apache=false
-
-#more advanced features
-#this means either they require more advanced configuration/setup
-#or require something from above. if you enable it here but not their requirements above,
-#it will be enabled automatically. for example, host_gentoo will enable rsync
-mutt=false
-rtorrent=false
-rsnapshot=false
-#host the gentoo repo over rsync
-host_gentoo=false
-#use apache to host a public files directory and git repo
-host_files=false
-host_git=false
+#local portage overlay
+localrepo=false
 
 #xorg options
 pulseaudio=false

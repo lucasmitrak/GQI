@@ -14,6 +14,7 @@ emerge -u lightdm
 rc-update add xdm default
 
 emerge -u plasma-meta
+emerge -u konsole
 
 if [ $user ]; then
 	usermod -a -G audio,cdrom,video,cdrw,usb,users $user
