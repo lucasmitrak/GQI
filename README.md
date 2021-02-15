@@ -1,4 +1,5 @@
 This is a gentoo quick installer. ![build](https://github.com/lucasmitrak/GQI/workflows/build/badge.svg)
+
 This is meant for people experienced with the gentoo installation
 
 There are three large parts to this GQI: the installer, the filer, and the kfragmenter. The installer is the actual bash scripts that will be run, but it needs the neccessary files for the operation system and optionally a kernel config/fragment. These can be optained from the filer and kfragmenter respectively. First however, you need to partition manually because the GQI will not do it for you. Then put the final logical parition in the installer's config under "fs".
