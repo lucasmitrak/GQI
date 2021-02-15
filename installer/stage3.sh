@@ -56,7 +56,8 @@ if $files_is_tar; then
 	tar xpf $ml/$files_name -C $ml
 elif [ $files_name ]; then
 	cp -r $ml/$files_name/* $ml
-	chown -R root:root /etc /var/db
+	[ -d /etc ] && chown -R root:root /etc
+	[ -d /var/db ] && chown -R root:root /var/db
 fi
 #if download kernel config
 if [ $kernel_http ]; then
