@@ -33,6 +33,4 @@ grub-mkconfig -o /boot/grub/grub.cfg
 #emerge misc packages
 emerge -u $packages
 [ -x post_setup.sh ] && ./post_setup.sh
-if $exit_script; then
-	./exit.sh
-fi
+if $exit_script; then ./exit.sh; fi

@@ -1,4 +1,2 @@
 www-client/firefox geckodriver
-sys-devel/llvm llvm_targets_AMDGPU llvm_targets_NVPTX
 media-libs/libvpx postproc
-dev-db/sqlite secure-delete

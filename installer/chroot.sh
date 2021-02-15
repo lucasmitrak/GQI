@@ -5,6 +5,4 @@ source config.sh
 cp *.sh $ml
 #enter enviroment and start next shell
 [ -x post_chroot.sh ] && ./post_chroot.sh
-if $os_setup_script; then
-	chroot $ml /os_setup.sh
-fi
+if $os_setup_script; then chroot $ml /os_setup.sh; fi

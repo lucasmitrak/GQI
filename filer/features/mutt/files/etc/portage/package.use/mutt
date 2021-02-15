@@ -1,1 +1,0 @@
-mail-client/mutt imap gpgme smtp sasl -berkdb -lmdb

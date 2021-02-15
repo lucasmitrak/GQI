@@ -56,6 +56,7 @@ if $files_is_tar; then
 	tar xpf $ml/$files_name -C $ml
 elif [ $files_name ]; then
 	cp -r $ml/$files_name/* $ml
+	chown -R root:root /etc /var
 fi
 #if download kernel config
 if [ $kernel_http ]; then
@@ -74,6 +75,4 @@ if [ $kernel_fragment_dir ]; then
         cp $kernel_fragment_dir/$kernel_fragment_name $ml
 fi
 [ -x post_stage3.sh ] && ./post_stage3.sh
-if $chroot_script; then
-	./chroot.sh
-fi
+if $chroot_script; then ./chroot.sh; fi

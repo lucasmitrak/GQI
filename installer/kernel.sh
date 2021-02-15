@@ -26,6 +26,4 @@ fi
 #use genkernel option as kernel to compile kernel or all for hardware detection
 genkernel $genkernel_option
 [ -x post_kernel.sh ] && ./post_kernel.sh
-if $setup_script; then
-	./setup.sh
-fi
+if $setup_script; then ./setup.sh; fi
