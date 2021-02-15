@@ -54,7 +54,7 @@ guest_qemu=false
 webrsync=true
 #1 default, 5 xorg, 8 plasma
 eselect_profile="1"
-eselect_locale="5"
+eselect_locale="2"
 
 ##kernel
 #set to kernel for just kernel(especially if you have a kernel config)
