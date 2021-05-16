@@ -60,15 +60,15 @@ if $wpa_supplicant; then add_feature "wpa_supplicant"; fi
 if $sshd; then add_feature "sshd"; fi
 if $rsyncd; then add_feature "rsyncd"; fi
 if $cronie; then add_feature "cronie"; fi
-if $dmcrypt; then add_feature "dmcrypt"; fi
 if $apache; then add_feature "apache"; fi
 if $localrepo; then add_feature "localrepo"; fi
 if $pulseaudio; then add_feature "pulseaudio"; fi
 if $xorg; then add_feature "xorg"; fi
 if $kodi; then add_feature "kodi"; fi
 if $plasma; then add_feature "plasma"; fi
-if $firefox; then add_feature "firefox"; fi
 if $autologin; then add_feature "autologin"; fi
+if $firefox; then add_feature "firefox"; fi
+#bases which have features
 if $lvm; then add_feature "lvm"; fi
 if $crypt; then add_feature "crypt"; fi
 if $virtualboxguest; then add_feature "virtualboxguest"; fi
