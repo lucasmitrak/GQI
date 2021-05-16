@@ -51,7 +51,7 @@ qemuguest=false
 
 ##os setup
 #webrsync over regular --sync
-webrsync=true
+webrsync=false
 #1 default, 5 xorg, 8 plasma
 eselect_profile="1"
 eselect_locale="2"
