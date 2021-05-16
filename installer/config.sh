@@ -46,8 +46,8 @@ kernel_fragment_name="config-fragment"
 kernel_fragment_http=""
 kernel_fragment_dir=""
 
-#guest in qemu?
-guest_qemu=false
+#qemu guest?
+qemuguest=false
 
 ##os setup
 #webrsync over regular --sync
@@ -66,7 +66,6 @@ genkernel_option="all"
 interface="eth0"
 root_pw="gentooquickinstall"
 sysklogd=true
-fcron=true
 packages="vim gentoolkit"
 
 ##continue onto this script

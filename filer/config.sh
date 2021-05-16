@@ -2,7 +2,7 @@
 set -ex
 
 #choose which defining features you want included
-qemu=false
+qemuguest=false
 virtualboxguest=false
 lvm=false
 crypt=false
@@ -15,6 +15,7 @@ sudo=false
 wpa_supplicant=false
 sshd=false
 rsyncd=false
+cronie=false
 apache=false
 #local portage overlay
 localrepo=false

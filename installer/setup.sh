@@ -12,11 +12,6 @@ echo "root:$root_pw"|chpasswd
 if $sysklogd; then
 	emerge -u sysklogd
 fi
-if $fcron; then
-	emerge -u fcron
-	rc-update add fcron default
-	fcrontab /etc/crontab
-fi
 #install dhcp client
 emerge -u dhcpcd
 #install boot loader

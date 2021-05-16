@@ -16,12 +16,12 @@ mkdir -p files
 cp -r bases/default/* files
 #copy specific files over
 $xorg && cp -r bases/xorg/* files
-$xorg && $qemu && cp -r bases/xorg_qemu/* files
+$xorg && $qemuguest && cp -r bases/xorg_qemuguest/* files
 $xorg && $virtualboxguest && cp -r bases/xorg_virtualboxguest/* files
-$qemu && cp -r bases/qemu/* files
+$qemuguest && cp -r bases/qemuguest/* files
 $lvm && cp -r bases/lvm/* files
 $crypt && cp -r bases/crypt/* files
-$crypt && $qemu && cp -r bases/crypt_qemu/* files
+$crypt && $qemuguest && cp -r bases/crypt_qemuguest/* files
 $lvm && $crypt && cp -r bases/lvm_crypt/* files
 
 function add_feature {
@@ -59,15 +59,16 @@ if $sudo; then add_feature "sudo"; fi
 if $wpa_supplicant; then add_feature "wpa_supplicant"; fi
 if $sshd; then add_feature "sshd"; fi
 if $rsyncd; then add_feature "rsyncd"; fi
-if $dmcrypt; then add_feature "dmcrypt"; fi
+if $cronie; then add_feature "cronie"; fi
 if $apache; then add_feature "apache"; fi
 if $localrepo; then add_feature "localrepo"; fi
 if $pulseaudio; then add_feature "pulseaudio"; fi
 if $xorg; then add_feature "xorg"; fi
 if $kodi; then add_feature "kodi"; fi
 if $plasma; then add_feature "plasma"; fi
-if $firefox; then add_feature "firefox"; fi
 if $autologin; then add_feature "autologin"; fi
+if $firefox; then add_feature "firefox"; fi
+#bases which have features
 if $lvm; then add_feature "lvm"; fi
 if $crypt; then add_feature "crypt"; fi
 if $virtualboxguest; then add_feature "virtualboxguest"; fi
