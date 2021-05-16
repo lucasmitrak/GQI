@@ -12,10 +12,6 @@ echo "root:$root_pw"|chpasswd
 if $sysklogd; then
 	emerge -u sysklogd
 fi
-if $cronie; then
-	emerge -u cron
-	rc-update add cronie default
-fi
 #install dhcp client
 emerge -u dhcpcd
 #install boot loader

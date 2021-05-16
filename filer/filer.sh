@@ -59,6 +59,7 @@ if $sudo; then add_feature "sudo"; fi
 if $wpa_supplicant; then add_feature "wpa_supplicant"; fi
 if $sshd; then add_feature "sshd"; fi
 if $rsyncd; then add_feature "rsyncd"; fi
+if $cronie; then add_feature "cronie"; fi
 if $dmcrypt; then add_feature "dmcrypt"; fi
 if $apache; then add_feature "apache"; fi
 if $localrepo; then add_feature "localrepo"; fi

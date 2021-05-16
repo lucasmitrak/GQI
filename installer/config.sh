@@ -66,7 +66,6 @@ genkernel_option="all"
 interface="eth0"
 root_pw="gentooquickinstall"
 sysklogd=true
-cronie=true
 packages="vim gentoolkit"
 
 ##continue onto this script

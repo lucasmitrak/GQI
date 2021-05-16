@@ -15,6 +15,7 @@ sudo=false
 wpa_supplicant=false
 sshd=false
 rsyncd=false
+cronie=false
 apache=false
 #local portage overlay
 localrepo=false
