@@ -11,7 +11,8 @@ emerge -u polkit
 emerge -u udisks
 
 emerge -u lightdm
-rc-update add xdm default
+sed -i -e "s/DISPLAYMANAGER=\"xdm\"/DISPLAYMANAGER=\"lightdm\"/g"  /etc/conf.d/display-manager
+rc-update add display-manager default
 
 emerge -u plasma-meta
 emerge -u konsole
