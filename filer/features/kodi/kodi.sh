@@ -2,7 +2,6 @@
 source config.sh
 emerge -u lightdm
 sed -i -e "s/DISPLAYMANAGER=\"xdm\"/DISPLAYMANAGER=\"lightdm\"/g"  /etc/conf.d/display-manager
-rc-update add display-manager default
 emerge -u kodi
 if [ $user ]; then
 	usermod -a -G audio,cdrom,video,cdrw,usb,users $user
