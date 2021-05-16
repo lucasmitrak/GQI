@@ -47,7 +47,7 @@ kernel_fragment_http=""
 kernel_fragment_dir=""
 
 #qemu guest?
-qemu=false
+qemuguest=false
 
 ##os setup
 #webrsync over regular --sync

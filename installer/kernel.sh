@@ -8,12 +8,12 @@ emerge -u pciutils genkernel gentoo-sources
 if [ -f /$kernel_name ]; then
 	#copy to location
 	cp /$kernel_name /usr/src/linux/.config
-elif [ -f /$kernel_fragment_name ] || $qemu; then
+elif [ -f /$kernel_fragment_name ] || $qemuguest; then
 	cd /usr/src/linux && make defconfig
 	cd /
 fi
 #enable qemu guest support
-if $qemu; then
+if $qemuguest; then
 	cd /usr/src/linux && make kvmconfig
 	cd /
 fi

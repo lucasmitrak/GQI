@@ -2,7 +2,7 @@
 set -ex
 
 #choose which defining features you want included
-qemu=false
+qemuguest=false
 virtualboxguest=false
 lvm=false
 crypt=false

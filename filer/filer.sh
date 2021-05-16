@@ -16,12 +16,12 @@ mkdir -p files
 cp -r bases/default/* files
 #copy specific files over
 $xorg && cp -r bases/xorg/* files
-$xorg && $qemu && cp -r bases/xorg_qemu/* files
+$xorg && $qemuguest && cp -r bases/xorg_qemuguest/* files
 $xorg && $virtualboxguest && cp -r bases/xorg_virtualboxguest/* files
-$qemu && cp -r bases/qemu/* files
+$qemuguest && cp -r bases/qemuguest/* files
 $lvm && cp -r bases/lvm/* files
 $crypt && cp -r bases/crypt/* files
-$crypt && $qemu && cp -r bases/crypt_qemu/* files
+$crypt && $qemuguest && cp -r bases/crypt_qemuguest/* files
 $lvm && $crypt && cp -r bases/lvm_crypt/* files
 
 function add_feature {
